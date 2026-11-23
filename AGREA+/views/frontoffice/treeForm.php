@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Farm Tree Types - AGREA</title>
+    <link rel="icon" href="assets/images/logo/AGREA.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<?php require __DIR__ . "/../shared/sidebar.php"; ?>
+<main class="auth-container tree-form-page">
+    <h1>AGREA</h1>
+    <h2>Tree Types for <?= htmlspecialchars($farm["farm_name"], ENT_QUOTES, "UTF-8") ?></h2>
+    <p>Enter each different type of tree growing on this farm.</p>
+    <?php require __DIR__ . "/../shared/tree_collection_fields.php"; ?>
+    <p><a href="<?= htmlspecialchars($backUrl, ENT_QUOTES, "UTF-8") ?>">Cancel and return to farm</a></p>
+</main>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
